@@ -25,7 +25,7 @@ app.get("/", (req,res)=>{
 mongoose.set("strictQuery",false);
 const Connect=async ()=>{
     try{
-      await mongoose.connect(process.env.MONGODB_URL);
+      await mongoose.connect("mongodb+srv://Riya:Riya1234@cluster0.ucwx52k.mongodb.net/tour-booking");
       console.log("Database is connected");
     }
     catch(error){
