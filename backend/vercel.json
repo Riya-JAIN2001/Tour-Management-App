@@ -1,8 +1,14 @@
 {"version":2,
   "builds": [
     {"src":"*.js","use":"@vercel/node"}],
-  "routes":[{
-    "src" :"/(.*)",
-    "dest":"/"}]
+  "functions": {
+        "api/index.js": {
+            "runtime": "vercel-php@0.3.1"
+        }
+    },
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/api/index.js"
+    }],
   
 }
