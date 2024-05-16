@@ -26,6 +26,7 @@ const handleClick= async e=>{
   e.preventDefault();
   try {
     const options = {
+      mode: 'no-cors',
       method: "post",
       headers: {
           'Content-type': 'application/json'
