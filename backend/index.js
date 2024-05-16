@@ -9,6 +9,7 @@ import authRoute from "./route/authRoute.js"
 import reviewRoutes from "./route/reviewRoutes.js"
 import bookingRoutes from "./route/bookingRoutes.js"
 import bodyParser from "body-parser";
+import generatePDFHandler from './handler.js'; // Note the .js extension
 dotenv.config();
 const app= express();
 const port= process.env.PORT||8000;
@@ -18,6 +19,12 @@ const corsOptions={
     credentials:true
 }
 
+
+
+
+
+// Define a route for generating PDF
+app.post('/generate-pdf', generatePDFHandler);
 
 app.get("/", (req,res)=>{
     res.send("working")
