@@ -1,1 +1,1 @@
-export const BASE_URL='https://tour-management-app-zeta.vercel.app/api/v1'
+export const BASE_URL='http://localhost:8000/api/v1'
