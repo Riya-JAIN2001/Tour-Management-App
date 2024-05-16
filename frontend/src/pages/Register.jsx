@@ -34,7 +34,7 @@ const handleClick= async e=>{
      
   }
   console.log(credentials)
-    const res=await fetch("http://localhost:8000/api/v1/auth/register",options)
+    const res=await fetch("https://tour-management-app-zeta.vercel.app/api/v1/auth/register",options)
     
 
     const result=await res.json();
