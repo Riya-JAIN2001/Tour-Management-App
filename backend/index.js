@@ -13,7 +13,7 @@ dotenv.config();
 const app= express();
 const port= process.env.PORT||8000;
 const corsOptions={
-    origin:["https://tour-management-app-full-stack.vercel.app"],
+    origin:["https://tour-management-app-ctus.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }
