@@ -13,7 +13,7 @@ const Tour = () => {
   const [pageCount,setPageCount]=useState(0);
   const [page,setPage]=useState(0);
   const {data:tours,loading, error}=useFetch(`${BASE_URL}/tours/?page=${page}`)
-  const {data:tourCount}=useFetch("https://tour-management-app-zeta.vercel.app/api/v1/tours/search/getTourCount")
+  const {data:tourCount}=useFetch("http://localhost:8000/api/v1/tours/search/getTourCount")
   console.log(tourCount)
   useEffect(()=>{
     const pages= Math.ceil(tourCount/8);
