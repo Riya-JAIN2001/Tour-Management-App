@@ -44,7 +44,7 @@ const handleClick= async e=>{
   navigate('/login')
 
   } catch (error) {
-    navigate('/')
+    navigate('/home')
     alert(Register Successfully)
   }
 }
