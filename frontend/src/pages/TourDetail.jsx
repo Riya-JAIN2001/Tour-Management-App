@@ -37,6 +37,7 @@ const TourDetail = () => {
       }
    
       const res =await fetch(`${BASE_URL}/review/${id}`,{
+        mode: 'no-cors',
         method:'post',
         headers:{
           'content-type':'application/json'
