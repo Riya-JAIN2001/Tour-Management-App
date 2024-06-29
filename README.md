@@ -2,7 +2,7 @@
 
 TravelWorld is a booking platform that allows users to book tours to various destinations. The application is built using modern web technologies to provide a seamless and fast experience for users on both desktop and mobile devices.
 
-[Live Deployment link](https://tour-management-app-full-stack.vercel.app/)
+[Live Deployment link](https://tourmanagement-application-riya-s-projects.vercel.app/)
 
 ## Features
 
